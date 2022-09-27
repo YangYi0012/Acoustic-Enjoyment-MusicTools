@@ -21,10 +21,10 @@ public class InterceptorConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        log.info("跨域请求配置");
-        //跨域请求拦截器,拦截所有请求，跨域放在最上面
-        CorsInterceptor corsInterceptor = new CorsInterceptor();
-        registry.addInterceptor(corsInterceptor).addPathPatterns("/**");
+//        log.info("跨域请求配置");
+//        //跨域请求拦截器,拦截所有请求，跨域放在最上面
+//        CorsInterceptor corsInterceptor = new CorsInterceptor();
+//        registry.addInterceptor(corsInterceptor).addPathPatterns("/**");
 
         log.info("签名验证配置");
         //创建签名验证拦截器
